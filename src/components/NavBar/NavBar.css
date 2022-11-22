@@ -1,0 +1,44 @@
+nav{
+    background-color: rgb(255, 255, 255);
+    border: solid black 2px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+.navbar__brand{
+    display: flex;
+    background-color: rgb(255, 226, 8);
+    width: fit-content;
+    padding: 2%;
+
+}
+.nav-marca  {
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    list-style: none;
+}
+.nav-div{
+    width: 70%;
+    text-align: center;
+    display: block;
+    justify-content: space-around;
+}
+.nav-list li{
+    font-size: 1.5rem;
+    padding-right:1% ;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-list li :hover{
+    color:blue;
+    font-size: 1.7rem;
+}
