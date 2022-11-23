@@ -1,28 +1,24 @@
 import ItemDetail from "../ItemDetail";
 import { useEffect, useState } from "react";
-const cosita=     {
-    id: 2,
-    product: 'Termo Stanley Negro',
-    categoria: "Termos",
-    Precio: 30000,
-    img: 'https://http2.mlstatic.com/D_NQ_NP_631197-MLA40974977558_032020-O.webp',
-    stock: 50,
-    amount: 0,
-    capacidad: "1,5 L",
-    detalles: "Porque algunas cosas son para toda la vida, este termo Stanley fue pensado para acompañarte a través de los años, ya que durabilidad y estilo son las palabras que definen a la marca.",
-};
+import { useParams } from "react-router-dom";
+import { ProductsData } from "../Products/ProductsData";
+
+
 export const ItemDetailContainer =()=>{
 
     const[data,setData]= useState({});
+    const {detalleId}= useParams();
+
 
     useEffect(()=>{
         const getData =new Promise(resolve => {
             setTimeout(() => {
-                resolve(cosita)
-            }, 3000);
+                resolve(ProductsData)
+            }, 1000);
         });
-        getData.then(res=> setData(res));
+        getData.then(res=> setData(res.find(product => product.id === parseInt(detalleId))));
     },[])
+
     return(
         <>
             <ItemDetail data={data}></ItemDetail>
