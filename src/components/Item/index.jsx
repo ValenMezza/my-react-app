@@ -1,8 +1,12 @@
 import "../Item/item.css"
 import { Link } from "react-router-dom";
+// import { useContext } from "react";
+// import { CartContext } from "../../context/CartContext";
 
 
 export const Item = ({ info }) => {
+    // const nombre = useContext(CartContext);
+    // console.log(CartContext);
     return (
         <>
             <div className="card">

@@ -1,0 +1,26 @@
+.Cart-Products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5%;
+
+}
+
+.each-product {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.each-product img {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 10%;
+}
+.preciofinal{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
