@@ -56,7 +56,7 @@ const Cart = () => {
 
 					))}
 					<p className="preciofinal">Total: ${totalPrice()}</p>
-					<button onClick={handleClick}>Finalizar compra</button>
+					<button className="css-button-arrow--green" onClick={handleClick}>Finalizar compra</button>
 				</div>
 
 			</div>
